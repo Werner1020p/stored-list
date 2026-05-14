@@ -1,7 +1,11 @@
-<h1>Express</h1>
-<ul>
-{{#each list}}
-<li>{{this}}</li>
-{{/each}}
-</ul>
+<h1>Weird Facts</h1>
+<p class="subtitle">A collection of strange and interesting facts stored in MongoDB.</p>
 
+<ul class="fact-list">
+    {{#each items}}
+    <li class="fact-card">
+        <h2>{{this.category}}</h2>
+        <p>{{this.fact}}</p>
+    </li>
+    {{/each}}
+</ul>
